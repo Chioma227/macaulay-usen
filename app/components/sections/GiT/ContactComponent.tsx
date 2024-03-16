@@ -20,7 +20,7 @@ const ContactComponent = () => {
       >
         <div className="mb-[20px] text-darkGrey">
           <p className=" text-center">
-            I'm always eager to connect with fellow developers, industry
+            I&apos;m always eager to connect with fellow developers, industry
             professionals, and enthusiasts. <br />
             lets collaborate to create something extraordinary
           </p>

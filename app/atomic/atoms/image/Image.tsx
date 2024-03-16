@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 //image props
 interface imageProps {
   src: string;
@@ -10,7 +10,7 @@ interface imageProps {
   extension: "png" | "jpg" | "jpeg" | "svg";
 }
 
-const Image = ({
+const ImageComponent = ({
   src,
   alt,
   width,
@@ -22,7 +22,7 @@ const Image = ({
   const dynamicSrc = `/assets/imgs/${src}.${extension}`;
 
   return (
-    <img
+    <Image
       className={className}
       src={dynamicSrc}
       alt={alt}
@@ -32,4 +32,4 @@ const Image = ({
   );
 };
 
-export default Image;
+export default ImageComponent;
