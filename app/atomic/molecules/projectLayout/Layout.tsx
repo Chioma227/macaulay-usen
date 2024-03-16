@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "../../atoms/image/Image";
 import Container from "../../atoms/container/Container";
@@ -25,7 +26,16 @@ const Layout = ({
       variant={containerVariants.FLEXFIT}
       className="flex-col shadow-lg shadow-ashBlack rounded-lg"
     >
-      <Image src={imgSrc} alt="" width={200} height={200} extension={imgExt} />
+      <section className="w-full h-[200px]">
+        <Image
+          src={imgSrc}
+          alt=""
+          width={200}
+          height={200}
+          extension={imgExt}
+          className="w-full h-[200px] object-cover"
+        />
+      </section>
       <section className="p-[20px]">
         <h3 className="text-[20px] font-semibold text-hover mb-[10px]">
           {title}
