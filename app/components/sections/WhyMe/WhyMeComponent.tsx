@@ -28,7 +28,7 @@ const WhyMeComponent = () => {
           have the proficiency to deliver results that exceed expectations.
           <br />
           Beyond just writing codes, I&apos;m driven by a passion for innovation and
-          a desire to push the boundaries of what's possible in mobile
+          a desire to push the boundaries of what&apos;s possible in mobile
           development. I&apos;m constantly exploring new technologies, experimenting
           with novel approaches, and staying abreast of emerging trends to
           ensure that my work remains at the forefront of industry innovation.

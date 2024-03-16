@@ -26,7 +26,7 @@ const ContactComponent = () => {
           </p>
         </div>
        <div className="flex items-center justify-center">
-       <Button variant={buttonVariants.NORMAL}>Let's Connect</Button>
+       <Button variant={buttonVariants.NORMAL}>Let&apos;s Connect</Button>
        </div>
       </Container>
     </Container>
