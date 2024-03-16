@@ -1,5 +1,7 @@
 import React from "react";
+import Container from "@/app/atomic/atoms/container/Container";
 import Layout from "@/app/atomic/molecules/projectLayout/Layout";
+import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
 
 const projectsData = [
   {
@@ -48,7 +50,7 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <div className="grid grid-cols-3">
+    <Container variant={containerVariants.LAYOUTGRID}>
       {projectsData.map(({ imgSrc, title, description, github, liveDemo }) => {
         return (
           <Layout
@@ -61,7 +63,7 @@ const Projects = () => {
           />
         );
       })}
-    </div>
+    </Container>
   );
 };
 

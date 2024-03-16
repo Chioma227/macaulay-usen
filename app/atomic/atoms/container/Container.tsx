@@ -9,7 +9,7 @@ interface containerProps {
 }
 
 const Container = ({ children, variant, className }: containerProps) => {
-    let style = "";
+  let style = "";
   switch (variant) {
     case containerVariants.WRAPPER:
       style = clsx("w-[80%]", className);
@@ -30,7 +30,20 @@ const Container = ({ children, variant, className }: containerProps) => {
       style = clsx("pt-[7%]", className);
       break;
     case containerVariants.BOX:
-      style = clsx("w-full p-[25px] shadow-lg shadow-inset shadow-ashBlack bg-gray-400 bg-opacity-20 rounded-lg", className);
+      style = clsx(
+        "w-full p-[25px] shadow-lg shadow-inset h-[400px]",
+        " shadow-ashBlack  bg-opacity-20 rounded-lg",
+        className
+      );
+      break;
+    case containerVariants.HEROWRAPPER:
+      style = clsx("w-full h-[400px]", className);
+      break;
+    case containerVariants.LAYOUTGRID:
+      style = clsx(
+        "grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8",
+        className
+      );
       break;
 
     default:

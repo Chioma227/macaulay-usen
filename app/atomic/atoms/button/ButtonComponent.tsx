@@ -13,7 +13,7 @@ export default function Button({ variant, children, className }: buttonProps) {
   switch (variant) {
     case buttonVariants.NORMAL:
       style = clsx(
-        "rounded-full bg-darkGrey hover:bg-hover transition-all transition-8 border-gray-500 border-[3px] px-[40px] py-[6px]",
+        "rounded-full bg-darkGrey hover:bg-hover hover:text-white font-semibold transition-all transition-8 border-slate-600 border-[3px] px-[40px] py-[6px]",
         className
       );
       break;

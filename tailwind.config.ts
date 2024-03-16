@@ -10,10 +10,10 @@ const config: Config = {
     extend: {
       colors:{
         blabk10:"#000000",
-        darkGrey:"#CCCCCC",
+        darkGrey:"#ffff",
         lightGrey:"#DDDDDD",
         hover:"#999999", 
-        ashBlack:"rgba(21, 20, 20, 0.746)"
+        ashBlack:"rgba(15, 15, 15, 0.804)"
       }
     },
   },
