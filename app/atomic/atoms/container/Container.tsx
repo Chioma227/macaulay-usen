@@ -12,13 +12,13 @@ const Container = ({ children, variant, className }: containerProps) => {
   let style = "";
   switch (variant) {
     case containerVariants.WRAPPER:
-      style = clsx("w-[80%]", className);
+      style = clsx("md:w-[80%] w-[90%]", className);
       break;
     case containerVariants.FLEXFIT:
       style = clsx("flex items-center", className);
       break;
     case containerVariants.FLEXCENTER:
-      style = clsx("flex items-center justify-center", className);
+      style = clsx("md:flex items-center justify-center", className);
       break;
     case containerVariants.FLEXBETWEEN:
       style = clsx("flex items-center gap-[50px] justify-between", className);
@@ -27,11 +27,14 @@ const Container = ({ children, variant, className }: containerProps) => {
       style = clsx("w-full", className);
       break;
     case containerVariants.PT:
-      style = clsx("pt-[7%]", className);
+      style = clsx("md:pt-[7%] pt-[10%]", className);
+      break;
+    case containerVariants.BLOCK:
+      style = clsx("block", className);
       break;
     case containerVariants.BOX:
       style = clsx(
-        "w-full p-[25px] shadow-lg shadow-inset h-[400px]",
+        "w-full p-[25px] shadow-lg shadow-inset h-[60%]",
         " shadow-ashBlack  bg-opacity-20 rounded-lg",
         className
       );

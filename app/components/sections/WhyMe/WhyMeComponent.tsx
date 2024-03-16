@@ -1,21 +1,17 @@
 import React from "react";
-import Div from "@/app/atomic/atoms/div/Div";
+import clsx from "clsx";
 import Image from "@/app/atomic/atoms/image/Image";
 import Container from "@/app/atomic/atoms/container/Container";
-import { divVariants } from "@/app/atomic/atoms/div/divVariant";
 import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
 
 const WhyMeComponent = () => {
   const imgExt = "jpg";
   return (
     <Container variant={containerVariants.PT}>
-      <Container variant={containerVariants.FLEXCENTER}>
-        <Div variant={divVariants.HEADER} />
-      </Container>
-      <div className=" gradient-text text-center text-[40px] font-bold select-none mb-[7%]">
+      <div className=" gradient-text text-center md:text-[40px] sm:text-[30px] text-[30px] font-bold select-none mb-[7%]">
         Why Hire Me?
       </div>
-      <Container variant={containerVariants.FLEXCENTER} className="gap-[30px]">
+      <Container variant={containerVariants.FLEXCENTER} className={clsx("gap-[30px] block","")}>
         <Image
           src="about"
           alt="Macaualay usen"
@@ -24,7 +20,7 @@ const WhyMeComponent = () => {
           extension={imgExt}
           className=" rounded-tr-lg h-full"
         />
-        <p className="text-darkGrey tracking-wide w-[500px] text-justify">
+        <p className="text-darkGrey tracking-wide md:w-[500px] w-fit text-justify">
           {" "}
           With expertise spanning, Java, C++, Kotlin, Dart, JavaScript, Swift,
           and cross-platform development with Flutter, I offer a comprehensive

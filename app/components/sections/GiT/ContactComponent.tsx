@@ -1,23 +1,22 @@
 import React from "react";
 import Container from "@/app/atomic/atoms/container/Container";
 import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
-import { divVariants } from "@/app/atomic/atoms/div/divVariant";
-import Div from "@/app/atomic/atoms/div/Div";
+import clsx from "clsx";
 import buttonVariants from "@/app/atomic/atoms/button/button";
 import Button from "@/app/atomic/atoms/button/ButtonComponent";
 
 const ContactComponent = () => {
   return (
-    <Container variant={containerVariants.PT} className="pb-[9%]">
-      <Container variant={containerVariants.FLEXCENTER}>
-        <Div variant={divVariants.HEADER} />
-      </Container>
-      <div className="gradient-text text-center text-[40px] font-bold select-none mb-[7%]">
+    <Container variant={containerVariants.PT} className="md:pb-[9%] pb-[13%]">
+      <div className="gradient-text text-center md:text-[40px] sm:text-[30px] text-[30px] font-bold select-none mb-[7%]">
         Get In Touch
       </div>
       <Container
         variant={containerVariants.FLEXCENTER}
-        className="flex-col shadow-lg shadow-ashBlack w-full border-l-[3px] border-r-[3px] border-l-slate-600 border-r-slate-600 py-[30px] rounded-lg"
+        className={clsx(
+          "flex-col shadow-lg shadow-ashBlack rounded-lg w-full border-l-slate-600 ",
+          " p-[20px] md:p-[30px] border-l-[3px] border-r-[3px] border-r-slate-600"
+        )}
       >
         <div className="mb-[20px] text-darkGrey">
           <p className=" text-center">
@@ -26,7 +25,9 @@ const ContactComponent = () => {
             lets collaborate to create something extraordinary
           </p>
         </div>
-        <Button variant={buttonVariants.NORMAL}>Let's Connect</Button>
+       <div className="flex items-center justify-center">
+       <Button variant={buttonVariants.NORMAL}>Let's Connect</Button>
+       </div>
       </Container>
     </Container>
   );

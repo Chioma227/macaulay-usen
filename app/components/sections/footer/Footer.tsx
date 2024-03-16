@@ -4,8 +4,8 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 
 const Footer = () => {
   return (
-    <footer className="w-full py-[2%] text-darkGrey border-t-[1px] border-hover border-opacity-15">
-     <Container variant={containerVariants.FLEXBETWEEN}>
+    <footer className="w-full py-[4%] text-darkGrey border-t-[1px] border-hover border-opacity-15">
+     <Container variant={containerVariants.FLEXBETWEEN} className="md:text-[16px] text-[14px]">
      <p>&copy; 2024.</p>{" "}
       <p>
         Made with &#x2764; By{" "}

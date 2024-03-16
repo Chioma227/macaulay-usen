@@ -22,45 +22,59 @@ const HeroComponent = () => {
   };
   return (
     <Container variant={containerVariants.PT}>
-      <Container variant={containerVariants.HEROWRAPPER}>
-        <Container variant={containerVariants.FLEXBETWEEN}>
-          <Container variant={containerVariants.BOX}>
-            <h3 className=" gradient-text text-[40px] font-bold text-darkGrey select-none">
-              I Am <span className="text-hover underline">Macaulay Usen</span>,
-              <br />A Mobile Developer.
-            </h3>
-            <p className="text-darkGrey tracking-wide">
-              {" "}
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
-              harum ipsam magnam ipsum? Repudiandae veniam incidunt, suscipit
-              assumenda sed voluptates, commodi ipsa consequuntur earum maxime
-              nobis qui sapiente ad impedit amet! Architecto sapiente
-              consequuntur quaerat! Officia hic reprehenderit temporibus sint
-              modi asperiores sunt earum atque.
-            </p>
-            <Container
-              variant={containerVariants.FLEXFIT}
-              className="gap-[20px]"
+      <main className="lg:flex block lg:flex-row flex-row-reverse items-center gap-[50px] justify-between ">
+        <Container variant={containerVariants.BOX}>
+          <h3 className="gradient-text lg:text-[40px] md:text-[30px] text-[24px] font-bold text-darkGrey select-none">
+            I Am <span className="text-hover underline">Macaulay Usen</span>,
+            <br />A Mobile Developer.
+          </h3>
+          <p className="text-darkGrey tracking-wide md:mt-[10px] mt-[15px] text-wrap md:text-[16px] text-[15px]">
+            {" "}
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            harum ipsam magnam ipsum? Repudiandae veniam incidunt, suscipit
+            assumenda sed voluptates, commodi ipsa consequuntur earum maxime
+            nobis qui sapiente ad impedit amet! Architecto sapiente consequuntur
+            quaerat! Officia hic reprehenderit temporibus sint modi asperiores
+            sunt earum atque.
+          </p>
+
+          {/* desktop layout */}
+          <Container
+            variant={containerVariants.FLEXFIT}
+            className="gap-[20px] mt-[30px] md:flex hidden"
+          >
+            <p
+              onClick={handleResumeDownload}
+              className="rounded-full cursor-pointer border-gray-500 border-[3px] transition-all transition-8 px-[40px] py-[6px] bg-transparent text-lightGrey hover:text-gray-900 hover:bg-darkGrey "
             >
-              <p
-                onClick={handleResumeDownload}
-                className="rounded-full cursor-pointer border-gray-500 border-[3px] transition-all transition-8 px-[40px] py-[6px] bg-transparent text-lightGrey hover:text-gray-900 hover:bg-darkGrey "
-              >
-                My Resume
-              </p>
-              <Links />
-            </Container>
+              My Resume
+            </p>
+            <Links />
           </Container>
-          <Image
-            src="hero"
-            alt="Macaualay usen"
-            width={300}
-            height={300}
-            extension={imgExt}
-            className=" rounded-tr-lg h-full"
-          />
+
+          {/* mobile layout */}
+          <Container
+            variant={containerVariants.BLOCK}
+            className="gap-[20px] mt-[10px] block md:hidden"
+          >
+            <Links/>
+            <p
+              onClick={handleResumeDownload}
+              className="rounded-full cursor-pointer mt-[15px] w-fit border-gray-500 border-[3px] transition-all transition-8 px-[20px] py-[6px] bg-transparent text-lightGrey hover:text-gray-900 hover:bg-darkGrey "
+            >
+              My Resume
+            </p>
+          </Container>
         </Container>
-      </Container>
+        <Image
+          src="hero"
+          alt="Macaualay usen"
+          width={300}
+          height={300}
+          extension={imgExt}
+          className=" rounded-tr-lg h-full md:block hidden"
+        />
+      </main>
     </Container>
   );
 };
