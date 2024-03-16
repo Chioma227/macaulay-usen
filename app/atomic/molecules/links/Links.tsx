@@ -8,17 +8,17 @@ import { containerVariants } from "../../atoms/container/containerVariants";
 const icons = [
   {
     name: "github",
-    url: "",
+    url: "https://tired.com",
     icon: <FaGithub />,
   },
   {
     name: "linkedIn",
-    url: "",
+    url: "https://tired.com",
     icon: <FaLinkedin />,
   },
   {
     name: "twitter",
-    url: "",
+    url: "https://tired.com",
     icon: <FaXTwitter />,
   },
 ];
