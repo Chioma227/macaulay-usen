@@ -22,13 +22,17 @@ const ImageComponent = ({
   const dynamicSrc = `/assets/imgs/${src}.${extension}`;
 
   return (
-    <Image
-      className={className}
-      src={dynamicSrc}
-      alt={alt}
-      width={width}
-      height={height}
-    />
+    src && (
+      <>
+        <Image
+          className={className}
+          src={dynamicSrc}
+          alt={alt}
+          width={width}
+          height={height}
+        />
+      </>
+    )
   );
 };
 

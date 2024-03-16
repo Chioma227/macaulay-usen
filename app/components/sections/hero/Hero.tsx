@@ -1,9 +1,8 @@
 "use client";
+import clsx from "clsx";
 import React, { useEffect } from "react";
 import Image from "@/app/atomic/atoms/image/Image";
 import Links from "@/app/atomic/molecules/links/Links";
-import buttonVariants from "@/app/atomic/atoms/button/button";
-import Button from "@/app/atomic/atoms/button/ButtonComponent";
 import Container from "@/app/atomic/atoms/container/Container";
 // import resume from "@/assets/pdf/MacaulayUbon.pdf"
 import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
@@ -11,15 +10,15 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 const HeroComponent = () => {
   const imgExt = "jpg";
 
-  const handleResumeDownload: any = () => {
-    const pdfUrl = "";
-    const linkElement = document.createElement("a");
-    linkElement.href = pdfUrl;
-    linkElement.download = "resume.pdf";
-    document.body.appendChild(linkElement);
-    linkElement.click();
-    document.body.removeChild(linkElement);
-  };
+  // const handleResumeDownload: any = () => {
+  //   const pdfUrl = "";
+  //   const linkElement = document.createElement("a");
+  //   linkElement.href = pdfUrl;
+  //   linkElement.download = "resume.pdf";
+  //   document.body.appendChild(linkElement);
+  //   linkElement.click();
+  //   document.body.removeChild(linkElement);
+  // };
   return (
     <Container variant={containerVariants.PT}>
       <main className="lg:flex block lg:flex-row flex-row-reverse items-center gap-[50px] justify-between ">
@@ -44,8 +43,11 @@ const HeroComponent = () => {
             className="gap-[20px] mt-[30px] md:flex hidden"
           >
             <p
-              onClick={handleResumeDownload}
-              className="rounded-full cursor-pointer border-gray-500 border-[3px] transition-all transition-8 px-[40px] py-[6px] bg-transparent text-lightGrey hover:text-gray-900 hover:bg-darkGrey "
+              // onClick={handleResumeDownload}
+              className={clsx(
+                "rounded-full cursor-pointer border-gray-500 border-[3px] transition-all",
+                " transition-8 px-[40px] py-[6px] bg-transparent text-lightGrey hover:text-gray-900 hover:bg-darkGrey "
+              )}
             >
               My Resume
             </p>
@@ -57,10 +59,13 @@ const HeroComponent = () => {
             variant={containerVariants.BLOCK}
             className="gap-[20px] mt-[10px] block md:hidden"
           >
-            <Links/>
+            <Links />
             <p
-              onClick={handleResumeDownload}
-              className="rounded-full cursor-pointer mt-[15px] w-fit border-gray-500 border-[3px] transition-all transition-8 px-[20px] py-[6px] bg-transparent text-lightGrey hover:text-gray-900 hover:bg-darkGrey "
+              // onClick={handleResumeDownload}
+              className={clsx(
+                "rounded-full cursor-pointer mt-[15px] w-fit border-gray-500 border-[3px] transition-all",
+                " transition-8 px-[20px] py-[6px] bg-transparent text-lightGrey hover:text-gray-900 hover:bg-darkGrey "
+              )}
             >
               My Resume
             </p>

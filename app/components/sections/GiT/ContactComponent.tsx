@@ -1,9 +1,9 @@
-import React from "react";
-import Container from "@/app/atomic/atoms/container/Container";
-import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
 import clsx from "clsx";
+import React from "react";
 import buttonVariants from "@/app/atomic/atoms/button/button";
 import Button from "@/app/atomic/atoms/button/ButtonComponent";
+import Container from "@/app/atomic/atoms/container/Container";
+import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
 
 const ContactComponent = () => {
   return (

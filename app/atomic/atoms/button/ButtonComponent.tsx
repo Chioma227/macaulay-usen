@@ -1,6 +1,6 @@
+import clsx from "clsx";
 import React from "react";
 import buttonVariants from "./button";
-import clsx from "clsx";
 
 interface buttonProps {
   variant: buttonVariants;

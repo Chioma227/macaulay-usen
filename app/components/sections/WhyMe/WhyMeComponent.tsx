@@ -1,5 +1,5 @@
-import React from "react";
 import clsx from "clsx";
+import React from "react";
 import Image from "@/app/atomic/atoms/image/Image";
 import Container from "@/app/atomic/atoms/container/Container";
 import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
