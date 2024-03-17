@@ -23,7 +23,7 @@ const data: devTools[] = [
 
 const DevTools = () => {
   return (
-    <div className="space-y-[20px] w-[180px] bg-black px-[15px] py-[35px] bg-opacity-30 rounded-[20%] shadow-lg shadow-ashBlack">
+    <div className="space-y-[20px] sm:w-[180px] w-full bg-black px-[15px] py-[35px] bg-opacity-30 rounded-[20%] shadow-lg shadow-ashBlack">
       {data.map(({ count, text }: devTools) => {
         return (
           <Container key={count} variant={containerVariants.FLEXFIT} className="gap-[15px] text-slate-200" >
