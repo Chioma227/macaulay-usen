@@ -59,10 +59,11 @@ const SimpleBio = () => {
           {data.map(({ icon, text }) => {
             return (
               <Container
+              key={text}
                 variant={containerVariants.FLEXBLOCK}
                 className="gap-[9px] text-left"
               >
-                <p key={text}>{icon}</p>
+                <p>{icon}</p>
                 <p>{text}</p>
               </Container>
             );

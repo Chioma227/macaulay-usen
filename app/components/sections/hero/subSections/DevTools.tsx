@@ -26,8 +26,8 @@ const DevTools = () => {
     <div className="space-y-[20px] w-[180px] bg-black px-[15px] py-[35px] bg-opacity-30 rounded-[20%] shadow-lg shadow-ashBlack">
       {data.map(({ count, text }: devTools) => {
         return (
-          <Container variant={containerVariants.FLEXFIT} className="gap-[15px] text-slate-200" >
-            <p key={count} className="font-bold text-slate-300 text-[35px]">{count}</p>
+          <Container key={count} variant={containerVariants.FLEXFIT} className="gap-[15px] text-slate-200" >
+            <p  className="font-bold text-slate-300 text-[35px]">{count}</p>
             <p>{text}</p>
           </Container>
         );
