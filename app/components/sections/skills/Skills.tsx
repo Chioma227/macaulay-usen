@@ -7,27 +7,22 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 const Skills = () => {
   const ImgExt = "png";
   return (
-    <Container variant={containerVariants.FLEXCENTER}>
-      <Container variant={containerVariants.FLEXBETWEEN} className="md:overflow-hidden overflow-x-scroll">
+    <Container variant={containerVariants.FLEXCENTER} className="gap-[25px] flex-wrap">
+      {/* <Container variant={containerVariants.FLEXBETWEEN} className=""> */}
         {skillsData.map(({ name, src, alt }) => {
           return (
-            <Container
-              variant={containerVariants.FLEXCENTER}
-              key={name}
-              className="flex-col shadow-lg shadow-ashBlack w-fit p-[30px]"
-            >
-              <Image
-                src={src}
-                alt={alt}
-                height={50}
-                width={50}
-                extension={ImgExt}
-              />
-              <p className="mt-[9px]">{name}</p>
-            </Container>
+            <div key={name} className="flex-col items-center justify-center shadow-lg shadow-ashBlack p-[30px] w-[90px] h-[90px] rounded-full">
+                <Image
+                  src={src}
+                  alt={alt}
+                  height={80}
+                  width={80}
+                  extension={ImgExt}
+                />
+              <p className="mt-[9px] text-lightGrey">{name}</p>
+            </div>
           );
         })}
-      </Container>
     </Container>
   );
 };

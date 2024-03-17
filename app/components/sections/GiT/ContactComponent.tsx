@@ -7,15 +7,15 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 
 const ContactComponent = () => {
   return (
-    <Container variant={containerVariants.PT} className="md:pb-[9%] pb-[13%]">
+    <Container variant={containerVariants.PT} className="md:pb-[9%] pb-[13%] bg-darkGreen">
       <div className="gradient-text text-center md:text-[40px] sm:text-[30px] text-[30px] font-bold select-none mb-[7%]">
         Get In Touch
       </div>
       <Container
         variant={containerVariants.FLEXCENTER}
         className={clsx(
-          "flex-col shadow-lg shadow-ashBlack rounded-lg w-full border-l-slate-600 ",
-          " p-[20px] md:p-[30px] border-l-[3px] border-r-[3px] border-r-slate-600"
+          "flex-col shadow-lg shadow-ashBlack rounded-lg w-full border-l-burgundry",
+          " p-[20px] md:p-[30px] border-l-[3px] border-r-[3px] border-r-burgundry"
         )}
       >
         <div className="mb-[20px] text-darkGrey">

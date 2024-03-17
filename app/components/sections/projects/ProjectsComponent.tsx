@@ -5,7 +5,7 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 
 const ProjectsComponent = () => {
   return (
-    <Container variant={containerVariants.PT}>
+    <Container variant={containerVariants.PT} className="bg-darkGreen">
       <div className="gradient-text text-center md:text-[40px] sm:text-[30px] text-[30px] font-bold text-darkGrey select-none mb-[7%]">
         My <span className="underline">Projects</span>
       </div>

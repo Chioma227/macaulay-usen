@@ -12,8 +12,8 @@ const Portfolio = () => {
     <div>
       <HeroComponent/>
       <AboutComponent/>
-      <ProjectsComponent/>
       <SkillsComponent/>
+      <ProjectsComponent/>
       <WhyMeComponent/>
       <ContactComponent/>
       <Footer/>

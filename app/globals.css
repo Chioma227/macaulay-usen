@@ -10,10 +10,10 @@ body {
 
 /* gradient text style */
 .gradient-text {
-  background: radial-gradient(
-    rgb(27, 27, 27),
+  background: linear-gradient(
+   #12F7D6,
     rgb(255, 255, 255),
-    rgb(15, 14, 14)
+    #12F7D6
   );
   -webkit-background-clip: text;
   -moz-background-clip: text;

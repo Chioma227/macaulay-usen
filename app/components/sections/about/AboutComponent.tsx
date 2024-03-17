@@ -6,32 +6,76 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 const AboutComponent = () => {
   const imgExt = "jpg";
   return (
-    <main className="bg-custom-bg h-fit bg-no-repeat bg-cover bg-center bg-blend-darken backdrop-brightness-50">
-     <Container variant={containerVariants.PT}>
-     <Container variant={containerVariants.FLEXBETWEEN}>
-      <section>
-        <p>About Me</p>
-       <Container variant={containerVariants.BOX} >
-       <p className="text-slate-200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ex
-          molestias eos dolor fugit iste sapiente harum, repellat odio dolorum
-          eligendi nisi? Reprehenderit, accusamus tempora officiis amet ab
-          dolores autem tenetur, sint maiores repudiandae aspernatur dolorem,
-          vel odit quia aut!
-        </p>
-       </Container>
+    <main className="bg-custom-bg h-fit bg-no-repeat bg-cover bg-center backdrop-blur-lg">
+      <section className="backdrop-brightness-[.3] h-fit backdrop-blur-[2px]">
+        <Container variant={containerVariants.PT} className="h-fit pb-[7%]">
+          <div className="gradient-text text-lightGrey text-center md:text-[40px] sm:text-[30px] text-[30px] font-bold text-darkGrey select-none mb-[7%]">
+            About Me
+          </div>
+          <section className="lg:block hidden">
+            <Container
+              variant={containerVariants.FLEXCENTER}
+              className="gap-[30px]"
+            >
+              <Container variant={containerVariants.BOX} className="border-l-[3px] border-l-burgundry">
+                <p className="text-slate-200">
+                  I am Macaulay Ubon, a mobile developer with more than 5 years
+                  of experience in the field. I bring a versatile skill set to
+                  the table with a solid foundation in Java, C++, Kotlin, Dart,
+                  Javascript, and Swift. <br /> My Journey began with aa passion
+                  for coding which led me to specialize in mobile app
+                  development, where i discovered my knack for bridging the gap
+                  between creativity and technical execution. <br /> I am a
+                  forward thinking mobile developer who is not only capable of
+                  meeting your project&apos;s needs but also driven to exceed
+                  them. I&apos;m eager to bring my skills, experience, and
+                  passion for mobile development to your team and contribute to
+                  the success of your projects.
+                </p>
+              </Container>
+              <ImageComponent
+                src="hero"
+                alt="macaulay"
+                width={300}
+                height={300}
+                extension={imgExt}
+                className="rounded-lg"
+              />
+            </Container>
+          </section>
+          {/* <section className="lg:hidden flex flex-col items-center justify-center space-y-[20px]"> */}
+            <Container
+              variant={containerVariants.FLEXCENTER}
+              className="gap-[30px] lg:hidden flex flex-col-reverse items-center justify-center space-y-[20px]"
+            >
+              <Container variant={containerVariants.BOX}>
+                <p className="text-slate-200">
+                  I am Macaulay Ubon, a mobile developer with more than 5 years
+                  of experience in the field. I bring a versatile skill set to
+                  the table with a solid foundation in Java, C++, Kotlin, Dart,
+                  Javascript, and Swift. <br /> My Journey began with aa passion
+                  for coding which led me to specialize in mobile app
+                  development, where i discovered my knack for bridging the gap
+                  between creativity and technical execution. <br /> I am a
+                  forward thinking mobile developer who is not only capable of
+                  meeting your project&apos;s needs but also driven to exceed
+                  them. I&apos;m eager to bring my skills, experience, and
+                  passion for mobile development to your team and contribute to
+                  the success of your projects.
+                </p>
+              </Container>
+              <ImageComponent
+                src="hero"
+                alt="macaulay"
+                width={300}
+                height={300}
+                extension={imgExt}
+                className="rounded-lg"
+              />
+            </Container>
+          {/* </section> */}
+        </Container>
       </section>
-      <section>
-        <ImageComponent
-          src="hero"
-          alt="macaulay"
-          width={200}
-          height={200}
-          extension={imgExt}
-        />
-      </section>
-    </Container>
-     </Container>
     </main>
   );
 };

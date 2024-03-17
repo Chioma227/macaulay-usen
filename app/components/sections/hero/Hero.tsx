@@ -9,9 +9,9 @@ import Header from "@/app/atomic/molecules/header/Header";
 const HeroComponent = () => {
   const imgExt = "jpg";
   return (
-    <main className="bg-ash h-fit">
+    <main className="bg-greenishAsh h-fit">
       <Header />
-      <Container variant={containerVariants.PT} className="pb-[7%]">
+      <Container variant={containerVariants.PT}>
         <main className="lg:flex hidden lg:flex-row flex-row-reverse items-center gap-[50px] justify-between ">
           <SimpleBio />
           <Info />

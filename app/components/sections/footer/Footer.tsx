@@ -4,12 +4,12 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 
 const Footer = () => {
   return (
-    <footer className="w-full py-[4%] text-darkGrey border-t-[1px] border-hover border-opacity-15">
-     <Container variant={containerVariants.FLEXBETWEEN} className="md:text-[16px] text-[14px]">
+    <footer className="w-full py-[4%] text-darkGrey border-t-[1px] border-hover border-opacity-15 bg-darkGreen">
+     <Container variant={containerVariants.FLEXAROUND} className="md:text-[16px] text-[14px]">
      <p>&copy; 2024.</p>{" "}
       <p>
         Made with &#x2764; By{" "}
-        <a  href="mailto:chiomamary.o12@gmail.com" className="hover:text-hover underline">
+        <a  href="mailto:chiomamary.o12@gmail.com" className="hover:text-burgundry underline">
           Chioma Okeke
         </a>
       </p>

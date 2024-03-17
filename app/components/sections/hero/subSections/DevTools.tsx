@@ -27,7 +27,7 @@ const DevTools = () => {
       {data.map(({ count, text }: devTools) => {
         return (
           <Container key={count} variant={containerVariants.FLEXFIT} className="gap-[15px] text-slate-200" >
-            <p  className="font-bold text-slate-300 text-[35px]">{count}</p>
+            <p  className="font-bold text-burgundry text-[35px]">{count}</p>
             <p>{text}</p>
           </Container>
         );

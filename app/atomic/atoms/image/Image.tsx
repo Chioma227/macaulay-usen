@@ -4,8 +4,8 @@ import Image from "next/image";
 interface imageProps {
   src: string;
   alt: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
   className?: string;
   extension: "png" | "jpg" | "jpeg" | "svg";
 }

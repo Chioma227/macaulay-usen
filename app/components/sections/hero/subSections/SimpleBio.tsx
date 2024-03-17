@@ -26,22 +26,22 @@ const data = [
 const SimpleBio = () => {
   const imgExt = "jpg";
 
-   // const handleResumeDownload: any = () => {
-  //   const pdfUrl = "";
-  //   const linkElement = document.createElement("a");
-  //   linkElement.href = pdfUrl;
-  //   linkElement.download = "resume.pdf";
-  //   document.body.appendChild(linkElement);
-  //   linkElement.click();
-  //   document.body.removeChild(linkElement);
-  // };
+   const handleResumeDownload = () => {
+    const pdfUrl = "/assets/pdf/MacaulayUbon.pdf";
+    const linkElement = document.createElement("a");
+    linkElement.href = pdfUrl;
+    linkElement.setAttribute("download", "MacaulayUbon")
+    document.body.appendChild(linkElement);
+    linkElement.click();
+    document.body.removeChild(linkElement);
+  };
   return (
-    <main className="border-[8px] w-fit  border-t-borderBlack border-l-borderBlack rounded-tl-[30%] border-b-transparent border-r-transparent">
+    <main className="border-[3px] w-fit  border-t-lightGreen border-l-lightGreen rounded-tl-[30%] border-b-transparent border-r-transparent">
       <Container
         variant={containerVariants.FLEXFIT}
         className="flex-col space-y-[15px] shadow-lg shadow-ashBlack md:px-[40px] px-[20px] text-gray-200 text-[15px] py-[35px] border-2  rounded-tl-[30%] rounded-br-[30%]"
       >
-        <section className="border-[3px] border-lightGrey rounded-full">
+        <section className="border-[3px] border-lightGreen rounded-full">
           <ImageComponent
             src="about"
             alt="macaulay"
@@ -69,15 +69,15 @@ const SimpleBio = () => {
             );
           })}
         </>
-        <p
-          // onClick={handleResumeDownload}
+        <button
+          // onClick={()=>handleResumeDownload}
           className={clsx(
             "rounded-full cursor-pointer mt-[15px] bg-lightGrey text-ashBlack w-full text-center border-[3px] transition-all",
             " transition-8 px-[20px] py-[6px] bg-transparent text-lightGrey hover:text-gray-900 hover:bg-darkGrey "
           )}
         >
           My Resume
-        </p>
+        </button>
       </Container>
     </main>
   );

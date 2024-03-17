@@ -7,7 +7,7 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 const WhyMeComponent = () => {
   const imgExt = "jpg";
   return (
-    <Container variant={containerVariants.PT}>
+    <Container variant={containerVariants.PT} className="bg-greenishAsh">
       <div className=" gradient-text text-center md:text-[40px] sm:text-[30px] text-[30px] font-bold select-none mb-[7%]">
         Why Hire Me?
       </div>
@@ -20,7 +20,8 @@ const WhyMeComponent = () => {
           extension={imgExt}
           className=" rounded-tr-lg h-full"
         />
-        <p className="text-darkGrey tracking-wide md:w-[500px] w-fit text-justify">
+       <Container variant={containerVariants.BOX} className="border-r-[3px] border-r-burgundry">
+       <p className="text-darkGrey tracking-wide md:w-[500px] w-fit text-justify">
           With expertise spanning, Java, C++, Kotlin, Dart, JavaScript, Swift,
           and cross-platform development with Flutter, I offer a comprehensive
           skill set that covers a wide range of technologies. Whether your
@@ -33,6 +34,7 @@ const WhyMeComponent = () => {
           with novel approaches, and staying abreast of emerging trends to
           ensure that my work remains at the forefront of industry innovation.
         </p>
+       </Container>
       </Container>
     </Container>
   );
