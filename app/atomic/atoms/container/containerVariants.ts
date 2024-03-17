@@ -5,6 +5,7 @@ export enum containerVariants {
     WRAPPER,
     FLEXFIT,
     FULLWIDTH,
+    FLEXBLOCK,
     FLEXCENTER,
     LAYOUTGRID,
     HEROWRAPPER,

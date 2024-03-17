@@ -6,12 +6,9 @@ import { containerVariants } from "./atomic/atoms/container/containerVariants";
 
 const Home = () => {
   return (
-    <main className="flex items-center justify-center">
-      <Container variant={containerVariants.WRAPPER} className="relative">
-        <Header />
+      <Container variant={containerVariants.WRAPPER}>
        <Portfolio/>
       </Container>
-    </main>
   );
 };
 
