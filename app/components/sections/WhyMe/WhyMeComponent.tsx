@@ -20,8 +20,8 @@ const WhyMeComponent = () => {
           extension={imgExt}
           className=" rounded-tr-lg h-full"
         />
-       <Container variant={containerVariants.BOX} className="border-r-[3px] border-r-burgundry">
-       <p className="text-darkGrey tracking-wide md:w-[500px] w-fit text-justify">
+       <Container variant={containerVariants.BOX} className="border-r-[3px] border-r-burgundry md:mt-none mt-[20px]">
+       <p className="text-darkGrey tracking-wide w-fit text-justify">
           With expertise spanning, Java, C++, Kotlin, Dart, JavaScript, Swift,
           and cross-platform development with Flutter, I offer a comprehensive
           skill set that covers a wide range of technologies. Whether your

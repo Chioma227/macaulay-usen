@@ -33,7 +33,10 @@ const Container = ({ children, variant, className }: containerProps) => {
       style = clsx("w-full", className);
       break;
     case containerVariants.PT:
-      style = clsx("md:pt-[7%] pt-[10%] px-[7%] pb-[7%]", className);
+      style = clsx(
+        "md:pt-[7%] pt-[10%] px-[7%] sm:pb-[7%] pb-[16%]",
+        className
+      );
       break;
     case containerVariants.BLOCK:
       style = clsx("block", className);
@@ -54,6 +57,11 @@ const Container = ({ children, variant, className }: containerProps) => {
         className
       );
       break;
+    case containerVariants.SKILLGRID:
+      style = clsx(
+        "grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-8",
+        className
+      );
 
     default:
       break;

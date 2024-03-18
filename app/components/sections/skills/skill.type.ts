@@ -8,11 +8,11 @@ type skillName =
   | "Swift"
 
 type imgSrc =
-  | "java-Logo"
+  | "java"
   | "c++"
   | "kotlin"
   | "dart"
-  | "javaScript"
+  | "jS"
   | "swift"
 
 type imgAlt =
@@ -28,7 +28,7 @@ type imgAlt =
 export const skillsData: { name: skillName; src: imgSrc; alt: imgAlt }[] = [
     {
       name: "Java",
-      src: "java-Logo",
+      src: "java",
       alt: "Java",
     },
     {
@@ -48,7 +48,7 @@ export const skillsData: { name: skillName; src: imgSrc; alt: imgAlt }[] = [
     },
     {
       name: "JavaScript",
-      src: "javaScript",
+      src: "jS",
       alt: "JavaScript",
     },
     {

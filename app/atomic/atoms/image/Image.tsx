@@ -18,6 +18,7 @@ const ImageComponent = ({
   extension,
   className,
 }: imageProps) => {
+  
   //dynamic image src
   const dynamicSrc = `/assets/imgs/${src}.${extension}`;
 

@@ -4,6 +4,7 @@ export enum containerVariants {
     BLOCK,
     WRAPPER,
     FLEXFIT,
+    SKILLGRID,
     FULLWIDTH,
     FLEXBLOCK,
     FLEXAROUND,

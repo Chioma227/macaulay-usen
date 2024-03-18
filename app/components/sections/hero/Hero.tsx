@@ -1,13 +1,12 @@
 import React from "react";
-import Container from "@/app/atomic/atoms/container/Container";
+import Info from "./subSections/Info";
 import DevTools from "./subSections/DevTools";
 import SimpleBio from "./subSections/SimpleBio";
-import Info from "./subSections/Info";
-import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
 import Header from "@/app/atomic/molecules/header/Header";
+import Container from "@/app/atomic/atoms/container/Container";
+import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
 
 const HeroComponent = () => {
-  const imgExt = "jpg";
   return (
     <main className="bg-greenishAsh h-fit">
       <Header />

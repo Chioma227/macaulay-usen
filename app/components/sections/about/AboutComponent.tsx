@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "@/app/atomic/atoms/container/Container";
 import ImageComponent from "@/app/atomic/atoms/image/Image";
+import Container from "@/app/atomic/atoms/container/Container";
 import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
 
 const AboutComponent = () => {
@@ -16,6 +16,36 @@ const AboutComponent = () => {
             <Container
               variant={containerVariants.FLEXCENTER}
               className="gap-[30px]"
+            >
+              <Container variant={containerVariants.BOX} className="border-l-[3px] border-l-burgundry">
+                <p className="text-slate-200 text-wrap">
+                  I am Macaulay Ubon, a mobile developer with more than 5 years
+                  of experience in the field. I bring a versatile skill set to
+                  the table with a solid foundation in Java, C++, Kotlin, Dart,
+                  Javascript, and Swift. <br /> My Journey began with aa passion
+                  for coding which led me to specialize in mobile app
+                  development, where i discovered my knack for bridging the gap
+                  between creativity and technical execution. <br /> I am a
+                  forward thinking mobile developer who is not only capable of
+                  meeting your project&apos;s needs but also driven to exceed
+                  them. I&apos;m eager to bring my skills, experience, and
+                  passion for mobile development to your team and contribute to
+                  the success of your projects.
+                </p>
+              </Container>
+              <ImageComponent
+                src="hero"
+                alt="macaulay"
+                width={300}
+                height={300}
+                extension={imgExt}
+                className="rounded-lg"
+              />
+            </Container>
+          </section>
+            <Container
+              variant={containerVariants.FLEXCENTER}
+              className="gap-[30px] lg:hidden flex flex-col-reverse items-center justify-center space-y-[20px]"
             >
               <Container variant={containerVariants.BOX} className="border-l-[3px] border-l-burgundry">
                 <p className="text-slate-200">
@@ -42,38 +72,6 @@ const AboutComponent = () => {
                 className="rounded-lg"
               />
             </Container>
-          </section>
-          {/* <section className="lg:hidden flex flex-col items-center justify-center space-y-[20px]"> */}
-            <Container
-              variant={containerVariants.FLEXCENTER}
-              className="gap-[30px] lg:hidden flex flex-col-reverse items-center justify-center space-y-[20px]"
-            >
-              <Container variant={containerVariants.BOX}>
-                <p className="text-slate-200">
-                  I am Macaulay Ubon, a mobile developer with more than 5 years
-                  of experience in the field. I bring a versatile skill set to
-                  the table with a solid foundation in Java, C++, Kotlin, Dart,
-                  Javascript, and Swift. <br /> My Journey began with aa passion
-                  for coding which led me to specialize in mobile app
-                  development, where i discovered my knack for bridging the gap
-                  between creativity and technical execution. <br /> I am a
-                  forward thinking mobile developer who is not only capable of
-                  meeting your project&apos;s needs but also driven to exceed
-                  them. I&apos;m eager to bring my skills, experience, and
-                  passion for mobile development to your team and contribute to
-                  the success of your projects.
-                </p>
-              </Container>
-              <ImageComponent
-                src="hero"
-                alt="macaulay"
-                width={300}
-                height={300}
-                extension={imgExt}
-                className="rounded-lg"
-              />
-            </Container>
-          {/* </section> */}
         </Container>
       </section>
     </main>

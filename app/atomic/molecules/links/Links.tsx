@@ -28,13 +28,14 @@ const Links = () => {
     <Container variant={containerVariants.FLEXFIT} className="space-x-[30px]">
       {icons.map(({ name, url, icon }) => {
         return (
-          <Link
-            key={name}
+         <div  key={name} className="bg-lightGreen px-[10px] py-[10px] rounded-full">
+           <Link
             href={url as string}
-            className="text-[20px] mt-[15px] text-darkGrey hover:text-gray-500 transition-all"
+            className="text-[20px] mt-[15px] text-ashBlack transition-all"
           >
             {icon}
           </Link>
+         </div>
         );
       })}
     </Container>

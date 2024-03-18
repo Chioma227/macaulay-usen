@@ -7,7 +7,7 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 
 const ContactComponent = () => {
   return (
-    <Container variant={containerVariants.PT} className="md:pb-[9%] pb-[13%] bg-darkGreen">
+    <Container variant={containerVariants.PT} className="md:pb-[9%] bg-darkGreen">
       <div className="gradient-text text-center md:text-[40px] sm:text-[30px] text-[30px] font-bold select-none mb-[7%]">
         Get In Touch
       </div>

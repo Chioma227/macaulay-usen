@@ -1,8 +1,8 @@
-"use client";
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "../../atoms/image/Image";
 import Container from "../../atoms/container/Container";
+import { MdArrowOutward } from "react-icons/md";
 import { containerVariants } from "../../atoms/container/containerVariants";
 
 interface LayoutProps {
@@ -42,8 +42,8 @@ const Layout = ({
         </h3>
         <p className="text-lightGrey text-[14px] mb-[10px]">{description}</p>
         <Container variant={containerVariants.FLEXFIT} className="gap-[9px]">
-          <Link href={liveDemo}>Preview</Link>
-          <Link href={gitHub}>Github</Link>
+          <Link href={gitHub} className="text-lightGrey font-semibold underline">Github</Link>
+          <Link href={liveDemo} className="text-burgundry font-semibold underline flex">Preview<MdArrowOutward/></Link>
         </Container>
       </section>
     </Container>
