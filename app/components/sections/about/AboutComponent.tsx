@@ -22,7 +22,7 @@ const AboutComponent = () => {
                   I am Macaulay Ubon, a mobile developer with more than 5 years
                   of experience in the field. I bring a versatile skill set to
                   the table with a solid foundation in Java, C++, Kotlin, Dart,
-                  Javascript, and Swift. <br /> My Journey began with aa passion
+                  Javascript, and Swift. <br /> My Journey began with a passion
                   for coding which led me to specialize in mobile app
                   development, where i discovered my knack for bridging the gap
                   between creativity and technical execution. <br /> I am a

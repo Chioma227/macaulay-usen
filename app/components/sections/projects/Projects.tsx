@@ -5,64 +5,70 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 
 const projectsData = [
   {
-    imgSrc: "imgOne",
-    title: "hello world one",
-    description: "lorem Ipsum dolor sit ammet deux dolor dolor ammett",
-    github: "https://github.com",
-    liveDemo: "https://github.com",
+    imgSrc: "TDPel",
+    title: "TDPel Media App",
+    description:
+      "A news application where users can read current news and aswell share their own articles.",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.kartalinc.tdpel",
   },
   {
-    imgSrc: "imgTwo",
-    title: "hello world otwo",
-    description: "lorem Ipsum dolor sit ammet deux dolor dolor ammett",
-    github: "https://github.com",
-    liveDemo: "https://github.com",
+    imgSrc: "VS",
+    title: "Vital Signs App",
+    description:
+      "The VS app is a medical application available on both apple store and play store which allows users measure their blood pressure, heart rate, respiratory rate, and steps. ",
+    appStore: "https://github.com",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.pelmedic.vsapp&pli=1",
   },
   {
-    imgSrc: "imgThree",
-    title: "hello world three",
+    imgSrc: "Maringo",
+    title: "Maringo App",
     description: "lorem Ipsum dolor sit ammet deux dolor dolor ammett",
-    github: "https://github.com",
-    liveDemo: "https://github.com",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.maringo.maringo",
   },
   {
-    imgSrc: "about",
-    title: "hello world four",
-    description: "lorem Ipsum dolor sit ammet deux dolor dolor ammett",
-    github: "https://github.com",
-    liveDemo: "https://github.com",
+    imgSrc: "Compad",
+    title: "Compad App",
+    description: "Compad ",
+    playStore: "https://play.google.com/store/apps/details?id=com.compad.app",
   },
   {
-    imgSrc: "hero",
-    title: "hello world five",
+    imgSrc: "Rapyd",
+    title: "Rapyd Cover User App",
     description: "lorem Ipsum dolor sit ammet deux dolor dolor ammett",
-    github: "https://github.com",
-    liveDemo: "https://github.com",
+    appStore: "https://github.com",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.rapydcover.user.app",
   },
   {
-    imgSrc: "imgOne",
-    title: "hello world six",
+    imgSrc: "RapydBus",
+    title: "Rapyd Cover Business App",
     description: "lorem Ipsum dolor sit ammet deux dolor dolor ammett",
-    github: "https://github.com",
-    liveDemo: "https://github.com",
+    appStore: "https://github.com",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.rapyd.cover.service.app",
   },
 ];
 
 const Projects = () => {
   return (
     <Container variant={containerVariants.LAYOUTGRID}>
-      {projectsData.map(({ imgSrc, title, description, github, liveDemo }) => {
-        return (
-          <Layout
-            key={title}
-            imgSrc={imgSrc}
-            title={title}
-            description={description}
-            gitHub={github}
-            liveDemo={liveDemo}
-          />
-        );
-      })}
+      {projectsData.map(
+        ({ imgSrc, title, description, appStore, playStore }) => {
+          return (
+            <Layout
+              key={title}
+              imgSrc={imgSrc}
+              title={title}
+              description={description}
+              appStore={appStore}
+              playStore={playStore}
+            />
+          );
+        }
+      )}
     </Container>
   );
 };

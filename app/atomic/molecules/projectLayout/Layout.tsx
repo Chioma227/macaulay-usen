@@ -8,19 +8,19 @@ import { containerVariants } from "../../atoms/container/containerVariants";
 interface LayoutProps {
   title: string;
   imgSrc: string;
-  gitHub: string;
-  liveDemo: string;
+  appStore: string | any;
+  playStore: string;
   description: string;
 }
 
 const Layout = ({
   title,
   imgSrc,
-  gitHub,
-  liveDemo,
+  appStore,
+  playStore,
   description,
 }: LayoutProps) => {
-  const imgExt = "jpg";
+  const imgExt = "jpeg";
   return (
     <Container
       variant={containerVariants.FLEXFIT}
@@ -33,7 +33,7 @@ const Layout = ({
           width={200}
           height={200}
           extension={imgExt}
-          className="w-full h-[200px] object-cover"
+          className="w-full h-[200px] object-cover rounded-tr-lg rounded-tl-lg"
         />
       </section>
       <section className="p-[20px]">
@@ -41,9 +41,9 @@ const Layout = ({
           {title}
         </h3>
         <p className="text-lightGrey text-[14px] mb-[10px]">{description}</p>
-        <Container variant={containerVariants.FLEXFIT} className="gap-[9px]">
-          <Link href={gitHub} className="text-lightGrey font-semibold underline">Github</Link>
-          <Link href={liveDemo} className="text-burgundry font-semibold underline flex">Preview<MdArrowOutward/></Link>
+        <Container variant={containerVariants.FLEXFIT} className="gap-[9px] self-end">
+         {appStore && <Link href={appStore} className="text-lightGrey font-semibold underline text-[12px]">Download on Apple Store</Link>}
+          <Link href={playStore} className="text-burgundry font-semibold underline flex text-[12px]">Download on GooglePlay Store<MdArrowOutward/></Link>
         </Container>
       </section>
     </Container>
