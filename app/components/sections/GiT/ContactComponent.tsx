@@ -4,6 +4,7 @@ import buttonVariants from "@/app/atomic/atoms/button/button";
 import Button from "@/app/atomic/atoms/button/ButtonComponent";
 import Container from "@/app/atomic/atoms/container/Container";
 import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
+import ContactForm from "./ContactForm";
 
 const ContactComponent = () => {
   return (
@@ -14,20 +15,11 @@ const ContactComponent = () => {
       <Container
         variant={containerVariants.FLEXCENTER}
         className={clsx(
-          "flex-col shadow-lg shadow-ashBlack rounded-lg w-full border-l-burgundry",
-          " p-[20px] md:p-[30px] border-l-[3px] border-r-[3px] border-r-burgundry"
+          "flex-col shadow-lg shadow-ashBlack rounded-lg w-full border-l-greenishAsh",
+          " p-[20px] md:p-[30px] border-l-[3px] border-r-[3px] border-r-greenishAsh"
         )}
       >
-        <div className="mb-[20px] text-darkGrey">
-          <p className=" text-center">
-            I&apos;m always eager to connect with fellow developers, industry
-            professionals, and enthusiasts. <br />
-            lets collaborate to create something extraordinary
-          </p>
-        </div>
-       <div className="flex items-center justify-center">
-       <Button variant={buttonVariants.NORMAL}>Let&apos;s Connect</Button>
-       </div>
+       <ContactForm/>
       </Container>
     </Container>
   );

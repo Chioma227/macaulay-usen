@@ -12,7 +12,7 @@ import { containerVariants } from "@/app/atomic/atoms/container/containerVariant
 const data = [
   {
     icon: <MdOutlineMail />,
-    text: "macaulayubon@gmail.com",
+    text: "ubonmacaulay@gmail.com",
   },
   {
     icon: <CiLocationOn />,

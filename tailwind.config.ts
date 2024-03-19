@@ -15,6 +15,7 @@ const config: Config = {
         lightGrey: "#DDDDDD",
         burgundry: "#12F7D6",
         lightGreen: "#98FAEC",
+        greenishAsh: "#292F36",
         ashBlack: "rgba(15, 15, 15, 0.804)",
         borderBlack: "rgba(35, 35, 35, 0.896)",
       },

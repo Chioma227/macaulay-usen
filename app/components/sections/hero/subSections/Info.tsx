@@ -15,7 +15,7 @@ const Info = () => {
         Let&apos;s collaborate to create something extraordinary.
       </p>
       <a
-        href="mailto:macaulayubon@gmail.com"
+        href="mailto:ubonmacaulay@gmail.com"
         className="flex items-center gap-[7px] mt-[20px]"
       >
         <p className="text-burgundry  font-semibold text-[19px]">
