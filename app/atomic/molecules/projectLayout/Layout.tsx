@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import Image from "../../atoms/image/Image";
-import Container from "../../atoms/container/Container";
+import { FaAppStoreIos } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
+import { BiLogoPlayStore } from "react-icons/bi";
+import Container from "../../atoms/container/Container";
 import { containerVariants } from "../../atoms/container/containerVariants";
 
 interface LayoutProps {
@@ -37,13 +39,13 @@ const Layout = ({
         />
       </section>
       <section className="p-[20px]">
-        <h3 className="text-[20px] font-semibold text-hover mb-[10px]">
+        <h3 className="text-[20px] font-semibold text-lightGrey mb-[10px]">
           {title}
         </h3>
-        <p className="text-lightGrey text-[14px] mb-[10px]">{description}</p>
-        <Container variant={containerVariants.FLEXFIT} className="gap-[9px] self-end">
-         {appStore && <Link href={appStore} className="text-lightGrey font-semibold underline text-[12px]">Download on Apple Store</Link>}
-          <Link href={playStore} className="text-burgundry font-semibold underline flex text-[12px]">Download on GooglePlay Store<MdArrowOutward/></Link>
+        <p className=" text-[14px] mb-[20px] text-hover">{description}</p>
+        <Container variant={containerVariants.FLEXFIT} className="gap-[15px] self-end">
+         {appStore && <Link href={appStore} className="text-burgundry font-semibold underline text-[25px]"><FaAppStoreIos/></Link>}
+          <Link href={playStore} className="text-burgundry font-semibold underline flex text-[25px]"><BiLogoPlayStore/></Link>
         </Container>
       </section>
     </Container>
