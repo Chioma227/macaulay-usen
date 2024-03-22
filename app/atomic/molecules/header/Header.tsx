@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Container
       variant={containerVariants.FLEXBETWEEN}
-     className="bg-opacity-20 px-[30px] border-b-[1px] border-b-lightGrey border-opacity-20  py-[30px]"
+     className=" bg-greenishAsh px-[30px] border-b-[1px] border-b-lightGrey border-opacity-20  md:py-[30px] py-[20px]"
      >
       <section className="text-darkGrey font-bold uppercase">Macaulay Ubon</section>
     </Container>

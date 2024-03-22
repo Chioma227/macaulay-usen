@@ -1,80 +1,35 @@
 import React from "react";
+import Link from "next/link";
+import { projectsData } from "./projectData";
 import Container from "@/app/atomic/atoms/container/Container";
 import Layout from "@/app/atomic/molecules/projectLayout/Layout";
 import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
 
-const projectsData = [
-  {
-    imgSrc: "TDPel",
-    title: "TDPel Media App",
-    description:
-      "A news application where users can read current news and aswell share their own articles with the world.",
-    playStore:
-      "https://play.google.com/store/apps/details?id=com.kartalinc.tdpel",
-  },
-  {
-    imgSrc: "VS",
-    title: "Vital Signs App",
-    description:
-      "Measure blood pressure, heart rate, respiratory rate, and steps on VS app avilable on both appstore and playstore.",
-    appStore:
-      "https://apps.apple.com/us/app/vital-signs-app-vs-app/id6449394830",
-    playStore:
-      "https://play.google.com/store/apps/details?id=com.pelmedic.vsapp&pli=1",
-  },
-  {
-    imgSrc: "Maringo",
-    title: "Maringo App",
-    description:
-      "Maringo is a social media app that connects users with similar interests, allowing them to share and build a supportive community.",
-    playStore:
-      "https://play.google.com/store/apps/details?id=com.maringo.maringo",
-  },
-  {
-    imgSrc: "Compad",
-    title: "Compad App",
-    description:
-      "Compad is a fintech application that offers users daily coins for free, allowing them to save, invest, and grow their digital assets.",
-    playStore: "https://play.google.com/store/apps/details?id=com.compad.app",
-  },
-  {
-    imgSrc: "Rapyd",
-    title: "Rapyd Cover User App",
-    description:
-      "Rapyd Cover app simplifies transportation by connecting users with drivers, allowing them to book rides with ease and convenience.",
-    appStore: "https://apps.apple.com/us/app/rapydcover/id6476503932",
-    playStore:
-      "https://play.google.com/store/apps/details?id=com.rapydcover.user.app",
-  },
-  {
-    imgSrc: "RapydBus",
-    title: "Rapyd Cover Business App",
-    description:
-      "Rapyd Cover Business is a business app that allow users to book repair services for their cars with ease and convenience.",
-    appStore: "https://apps.apple.com/us/app/rapydcover-business/id6476151143",
-    playStore:
-      "https://play.google.com/store/apps/details?id=com.rapyd.cover.service.app",
-  },
-];
-
 const Projects = () => {
   return (
-    <Container variant={containerVariants.LAYOUTGRID}>
-      {projectsData.map(
-        ({ imgSrc, title, description, appStore, playStore }) => {
-          return (
-            <Layout
-              key={title}
-              imgSrc={imgSrc}
-              title={title}
-              description={description}
-              appStore={appStore}
-              playStore={playStore}
-            />
-          );
-        }
+    <>
+      <Container variant={containerVariants.LAYOUTGRID}>
+        {projectsData
+          .slice(0, 6)
+          .map(({ imgSrc, title, description, appStore, playStore }) => {
+            return (
+              <Layout
+                key={title}
+                imgSrc={imgSrc}
+                title={title}
+                description={description}
+                appStore={appStore}
+                playStore={playStore}
+              />
+            );
+          })}
+      </Container>
+      {projectsData.length > 6 && (
+        <Container variant={containerVariants.FLEXCENTER} className="mt-[30px]">
+          <Link href="/projects" className="underline text-burgundry font-medium">See all Projects</Link>
+        </Container>
       )}
-    </Container>
+    </>
   );
 };
 

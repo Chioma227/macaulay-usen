@@ -2,14 +2,12 @@ import React from "react";
 import Info from "./subSections/Info";
 import DevTools from "./subSections/DevTools";
 import SimpleBio from "./subSections/SimpleBio";
-import Header from "@/app/atomic/molecules/header/Header";
 import Container from "@/app/atomic/atoms/container/Container";
 import { containerVariants } from "@/app/atomic/atoms/container/containerVariants";
 
 const HeroComponent = () => {
   return (
     <main className="bg-greenishAsh h-fit">
-      <Header />
       <Container variant={containerVariants.PT}>
         <main className="lg:flex hidden lg:flex-row flex-row-reverse items-center gap-[50px] justify-between ">
           <SimpleBio />

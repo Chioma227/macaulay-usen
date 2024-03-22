@@ -12,7 +12,7 @@ const data: devTools[] = [
     text: "Programming Languages",
   },
   {
-    count: 3,
+    count: 10,
     text: "Development Tools",
   },
   {
